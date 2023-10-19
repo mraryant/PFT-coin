@@ -1,0 +1,57 @@
+#about-us{
+   
+        position: relative;
+            height: 100vh;
+            width: 100vw;
+            /* background-color: var(--bg-dark-blue); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+}
+#about-box{
+    
+    background: linear-gradient(275deg, rgba(235, 235, 235, 0.2), rgba(0,0,0,0.5));
+    /* background-color: var(--black); */
+    /* opacity: 0.5; */
+    border-radius: 30px;
+    border: 2px solid var(--golden);
+    min-height: 80%;
+    width: 70%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px 6vmax 20px 6vmax;
+    flex-direction: column;
+}
+#about-box>h2 {
+     font-size: 1.5vmax;
+    text-align: center;
+    font-weight: 600;
+}
+.about-greencheak{
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-greencheak>h3{
+    font-size: 1.5vmax;
+    font-weight: 600;
+    text-align: center;
+}
+#green-cheak-boxes{
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+}
+#about-greencheak>img{
+    width: 1vmin;
+}

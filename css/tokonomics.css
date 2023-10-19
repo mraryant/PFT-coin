@@ -1,0 +1,67 @@
+#tokonomics{
+    position: relative;
+        height: 90vh;
+        width: 100vw;
+        /* background-color: var(--bg-dark-blue); */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+}
+.toko-heading{
+    border-bottom: 4px solid white;
+    margin-top: 30px;
+}
+.toko-heading>h1{
+        letter-spacing: 5px; 
+        font-size: 40px;
+        background-image: linear-gradient(to right, #F65741, #C53678);
+            /* Define your gradient colors here */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            /* font-size: 36px; */
+        
+}
+
+#toko-bottom{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    gap: 6vmax;
+
+}
+#toko-bottom-left{
+    width: 40%;
+    position: relative;
+}
+#toko-bottom-left>img{
+    position: absolute;
+    width: 100%;
+}
+#toko-bottom-mid{
+    width: 30%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+#toko-bottom-right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#toko-bottom-right>div {
+    background-color:rgb(215, 57, 247,0.3);
+    border-radius: 20px;
+    width: 100%;
+    padding:10px 10px 10px 50px;
+    display: flex;
+    
+}
+#toko-bottom-right>div>h4{
+    font-weight: 500;
+}
