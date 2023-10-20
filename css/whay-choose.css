@@ -18,13 +18,19 @@
 }
 #whay-choose-top{
     display: flex;
+    
     width: 70%;
     gap: 20px;
     flex-direction: column;
 }
+#whay-choose-top>h3{
+font-size: 3vmin;
+font-weight: 500;
+}
 #whay-choose-bottom{
     display: flex;
     flex-wrap:wrap-reverse;
+    margin-top: 60px;
     justify-content: space-between;
 }
 #wc-bottom-left{
@@ -79,7 +85,11 @@
 }
 
 
-
+@media(max-width:551px){
+    .wc-card>h4{
+        font-size: 3vmin;
+    }
+}
 
 @media (max-width: 1054px) {
 
@@ -88,25 +98,36 @@
         Make them stack on top of each other
     } */
     #whay-choose-bottom {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
-    }
-
+        margin-top: -16px;
+    } 
     #wc-bottom-left {
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
     }
 
-    
+    #whay-choose-container{
+       align-items: center;
+    }
+    #whay-choose-top{
+       align-items: center;
+       text-align: center;
+    }
+        #whay-choose-top>h3 {
+            font-size: 4vmin;
+            font-weight: 400;
+        }
 
     #first-pair {
         justify-content: center;
         /* width: 100%; */
     }
-
+         
     #wc-bottom-right {
         margin-top: 0px;
+        width: 60%;
     }
 
 }

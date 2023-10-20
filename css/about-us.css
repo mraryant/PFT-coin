@@ -1,7 +1,7 @@
 #about-us{
    
         position: relative;
-            height: 100vh;
+            min-height: 100vh;
             width: 100vw;
             /* background-color: var(--bg-dark-blue); */
             display: flex;
@@ -32,7 +32,7 @@
     font-weight: 600;
 }
 .about-greencheak{
-    width: 17rem;
+    width: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@
 }
 .about-greencheak>h3{
     font-size: 1.5vmax;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
 }
 #green-cheak-boxes{
@@ -54,4 +54,12 @@
 }
 #about-greencheak>img{
     width: 1vmin;
+}
+
+@media (max-width:1190px){
+    .about-greencheak>h3 {
+            font-size: 2vmax;
+            font-weight: 400;
+            text-align: center;
+        }
 }
