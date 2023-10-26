@@ -7,6 +7,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        padding: 20px 10px;
         justify-content: space-around;
 }
 
@@ -23,12 +24,12 @@
 }
 #listed-on-left>h5{
         margin-top: 40px;
-
 }
 #listed-on-right{
         width: 50%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 30px;
 }
 .company-pair{
@@ -50,4 +51,45 @@
 }
 .listed-company>h3{
         font-size: 1.5vmax;
+}
+
+@media (max-width:318px)
+{
+.listed-company {
+                width: 80vmin;
+        }
+.company-pair {
+                        flex-direction: column;
+                        gap: 10px;
+                }
+}
+@media (max-width:690px)
+{
+#listed-on-main{
+        width: 90%;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        justify-content: space-between;
+}
+#listed-on-right {
+        /* justify-content: center; */
+        width: 100%;
+        align-items: center;
+}
+#listed-on-left {
+        width: 90%;
+}
+.listed-company {
+        width: 40vmin;
+}
+#listed-on-left>p {
+        font-size: 10px;
+}
+#listed-on-left>h1 {
+        font-size: 5vmin;
+}
+#listed-on-left>h5 {
+        font-size: 12px;
+}
 }

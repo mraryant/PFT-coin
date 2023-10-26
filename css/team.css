@@ -44,7 +44,18 @@
     background-color: white;
     height: 9rem;
     width: 9rem;
+    display: flex;
     border-radius: 100%;
+    border: 2px solid white;
+    /* position: relative; */
+}
+.image-div>img {
+/* position: absolute; */
+height: 100%;
+width: 100%;
+border-radius: 100%;
+object-fit: cover;
+overflow:hidden;
 }
 .team-card>h3{
     width: 100%;

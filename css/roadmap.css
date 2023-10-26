@@ -5,19 +5,23 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        padding: 0px 20px;
         align-items: center;
         justify-content: space-around;
 }
 #roadmap-main{
     justify-content: center;
+    align-items: center;
     width: 100vmin;
     flex-direction: column;
     display: flex;
+    padding: 20px;
     margin-top: 50px;
 }
 .roadmap-card1{
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 .card1-left{
     width: 300px;
@@ -70,3 +74,4 @@
 .card1-right>h2{
     font-size:7vmax;
 }
+

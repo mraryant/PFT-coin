@@ -53,13 +53,16 @@ font-weight: 500;
     border-radius: 20px ;
     border: 2px solid var(--golden) ;
     border-bottom: 5px solid var(--golden);
+    
 }
-
-
-
 .wc-card>h5{
     font-weight: 500;
 }
+
+ 
+ 
+
+
 
 #wc-bottom-right{
     display: flex;
