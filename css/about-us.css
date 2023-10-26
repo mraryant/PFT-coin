@@ -17,7 +17,7 @@
     border-radius: 30px;
     border: 2px solid var(--golden);
     min-height: 80%;
-    width: 70%;
+    width: 80%;
     gap: 30px;
     display: flex;
     align-items: center;
@@ -40,6 +40,9 @@
     top:0;
     border-radius: 30px;
     z-index: -1;
+}
+#about-box>h1 {
+    font-size: 5.5vmin;
 }
 #about-box>h2 {
      font-size: 1.3vmax;
@@ -88,4 +91,18 @@
             text-align: center;
             
         }
+     #about>h2 {
+            font-size: 7vmax;
+        }
+}
+@media (max-width:805px){
+  
+                #about-box {
+                    width: 90%;
+                }
+                #about-box>h2 {
+                    padding: 10px   0px  ;
+                    font-size: 2.5vmax;
+                    font-weight: 500;
+                }
 }

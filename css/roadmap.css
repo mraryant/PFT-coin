@@ -75,3 +75,13 @@
     font-size:7vmax;
 }
 
+
+@media (max-width:418px)
+{
+    .card1-left-2>h3{
+        font-size: 4vmin;
+    }
+    .card1-left>h3{
+        font-size: 4vmin;
+    }
+}

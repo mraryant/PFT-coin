@@ -4,7 +4,16 @@
 // locomotiv**************************************************
 
 
-gsap.from("#nav #nav-left , #nav-middle h3 , #nav-right   " , {
+gsap.from(" #nav-left , #nav-right" , {
+    y: -90,
+    opacity: 0.1,
+    scale:1.1,
+    // stagger:0.2,
+    duration: 0.5,
+    delay:0.3
+    
+})
+gsap.from("#nav-middle h3" , {
     y: -90,
     opacity: 0,
     scale:1.1,
@@ -14,7 +23,7 @@ gsap.from("#nav #nav-left , #nav-middle h3 , #nav-right   " , {
     
 })
 gsap.to("#nav", {
-    width: "100vw",
+    // width: "100vw",
     backgroundColor: " rgb(30, 31, 31)",
     duration: 0.5,
     y: -20,
@@ -225,7 +234,7 @@ gsap.to("#wc-bottom-right #wc-img1,#wc-img2", {
 
 gsap.to("#toko-bottom-left", {
     duration: 3,
-    scale:1.1,
+    scale:1.,
     x: 0, // Horizontal movement
     y: -30,  // Vertical movement
     // rotation: 360, // Rotate the element
