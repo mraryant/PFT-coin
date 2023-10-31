@@ -1,9 +1,27 @@
-// locomotiv**************************************************
+
+
+
+// smooth scrolling 
 
  
-// locomotiv**************************************************
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
 
+//         const targetId = this.getAttribute('href').substring(1);
+//         const targetElement = document.getElementById(targetId);
 
+//         if (targetElement) {
+//             targetElement.scrollIntoView({
+//                 behavior: 'smooth',
+//                 block: 'start'
+//             });
+//         }
+//     });
+// });
+ 
+ 
+ 
 gsap.from(" #nav-left , #nav-right" , {
     y: -90,
     opacity: 0.1,
@@ -104,10 +122,9 @@ gsap.to("#hero-section ,#hero-section img,#hero-section-left,hero-section-right"
 
  
 
-let about_cards = document.querySelectorAll(".about-greencheak");
-about_cards.forEach((ele, index) => {
+ 
     
-    gsap.from(ele, {
+    gsap.from(".about-greencheak", {
         opacity: 0,
         scale: 0.8,
         duration: 1,
@@ -118,37 +135,32 @@ about_cards.forEach((ele, index) => {
             stagger:0.5,
             scroller: "body",
             // markers: true,
-            start: "top 90%",
-            end: "top 80%",
+            start: "top bottom",
+            end: "top bottom",
             scrub: 0.2,
         }, 
     
     })
+ 
 
-})
 
-
-//how it works  section 
-let hiw_cards = document.querySelectorAll(".hiw-card");
-
-hiw_cards.forEach((elem, index) => {
-    gsap.from(elem, {
-        // y:500,
-        opacity: 0,
-        // delay: 0.5,
+ 
+gsap.from(".hiw-card", {
+        
+        opacity: 0, 
         duration: 0.5, 
          
         scrollTrigger: {
-            trigger: elem,
+            trigger: ".hiw-card",
             scroller: "body",
             // markers:true,
             start: "top bottom",
-            end: "top 90%",
-            // stagger:0.5,
-            scrub:0.4,
+            end: "top bottom",
+             
+            // scrub:3,
         }
     })
-})
+ 
 
 
 // whay choose
@@ -167,8 +179,8 @@ wc_tl.from(" #whay-choose-top>h2 , #whay-choose-top>h3  ", {
         trigger: "#whay-choose",
         scroller: "body",
         // markers: true,
-        start: "top 70%",
-        end: "top 69%",
+        start: "top bottom",
+        end: "top bottom",
         scrub: 3,
         
     }
@@ -245,7 +257,8 @@ gsap.to("#toko-bottom-left", {
 
 gsap.from("#toko-bottom-left img", {
     x: -500,
-    delay:1,
+    // delay: 1,
+    opacity:0,
     duration:5,
     stagger:3,
     scrollTrigger: {
@@ -255,6 +268,7 @@ gsap.from("#toko-bottom-left img", {
         start: "top bottom",
         end: "top bottom",
         scrub: 3,
+        toggleActions: "play reverse play reverse"
         
     }
 })
@@ -270,55 +284,55 @@ gsap.from("#mid-right   ", {
         start: "top bottom",
         end: "top bottom",
         scrub: 3,
-        
+        toggleActions: "play reverse play reverse"
     }
 })
 
 //roadmap 
-let tl_roadmap = gsap.timeline();
+// let tl_roadmap = gsap.timeline();
 
 
-let roadmap_cards = document.querySelectorAll(".card1-left")
-let roadmap_cards_2 = document.querySelectorAll(".card1-left-2")
+// let roadmap_cards = document.querySelectorAll(".card1-left")
+// let roadmap_cards_2 = document.querySelectorAll(".card1-left-2")
 
-roadmap_cards.forEach(elem => {
+// roadmap_cards.forEach(elem => {
     
-    tl_roadmap.from(elem, {
-        x: -500,
-        delay: 0.5,
-        duration: 2,
-        stagger: 3,
-        scrollTrigger: {
-            trigger: elem,
-            scroller: "body",
-            // markers: true, 
-            start: "top bottom",
-            end: "top bottom",
-            scrub: 4,
+//     tl_roadmap.from(elem, {
+//         x: -500,
+//         delay: 0.5,
+//         duration: 2,
+//         stagger: 3,
+//         scrollTrigger: {
+//             trigger: elem,
+//             scroller: "body",
+//             markers: true, 
+//             start: "top 110%",
+//             end: "top 110%",
+//             scrub: 4,
     
-        }
-    })
-})
+//         }
+//     })
+// })
 
-roadmap_cards_2.forEach(elem => {
+// roadmap_cards_2.forEach(elem => {
     
-    tl_roadmap.from(elem, {
-        x: 500,
-        delay: 0.5,
-        duration: 2,
-        stagger: 3,
-        scrollTrigger: {
-            trigger: elem,
-            scroller: "body",
-            // markers: true, 
-            start: "top bottom",
-            end: "top bottom",
-            scrub: 3,
+//     tl_roadmap.from(elem, {
+//         x: 500,
+//         delay: 0.5,
+//         duration: 2,
+//         stagger: 3,
+//         scrollTrigger: {
+//             trigger: elem,
+//             scroller: "body",
+//             markers: true, 
+//             start: "top 110%",
+//             end: "top 110%",
+//             scrub: 3,
     
-        }
-    })
+//         }
+//     })
 
-})
+// })
 
 //team
 
@@ -340,7 +354,7 @@ gsap.from("#team #team-main", {
 gsap.from("#footer-bottom", {
     opacity: 0,
     y:20,
-    scale: 1.7,
+    scale: 0.7,
     duration:1,
     scrollTrigger: {
         trigger: "#footer-bottom",
@@ -353,7 +367,10 @@ gsap.from("#footer-bottom", {
     }
 })
 
+ 
 
+/// smooth scrolling
+    
 
 
 

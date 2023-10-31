@@ -35,7 +35,9 @@
     --bg-light-blue:#1A1B42;
 }
 
-
+a{
+    text-decoration: none;
+}
 
 .prime-orange{
      color: var(--primary-orange);
