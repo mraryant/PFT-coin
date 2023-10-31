@@ -4,21 +4,21 @@
 // smooth scrolling 
 
  
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-//         const targetId = this.getAttribute('href').substring(1);
-//         const targetElement = document.getElementById(targetId);
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
 
-//         if (targetElement) {
-//             targetElement.scrollIntoView({
-//                 behavior: 'smooth',
-//                 block: 'start'
-//             });
-//         }
-//     });
-// });
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
  
  
  
@@ -289,50 +289,50 @@ gsap.from("#mid-right   ", {
 })
 
 //roadmap 
-// let tl_roadmap = gsap.timeline();
+let tl_roadmap = gsap.timeline();
 
 
-// let roadmap_cards = document.querySelectorAll(".card1-left")
-// let roadmap_cards_2 = document.querySelectorAll(".card1-left-2")
+let roadmap_cards = document.querySelectorAll(".card1-left")
+let roadmap_cards_2 = document.querySelectorAll(".card1-left-2")
 
-// roadmap_cards.forEach(elem => {
+roadmap_cards.forEach(elem => {
     
-//     tl_roadmap.from(elem, {
-//         x: -500,
-//         delay: 0.5,
-//         duration: 2,
-//         stagger: 3,
-//         scrollTrigger: {
-//             trigger: elem,
-//             scroller: "body",
-//             markers: true, 
-//             start: "top 110%",
-//             end: "top 110%",
-//             scrub: 4,
+    tl_roadmap.from(elem, {
+        x: -500,
+        delay: 0.5,
+        duration: 2,
+        stagger: 3,
+        scrollTrigger: {
+            trigger: elem,
+            scroller: "body",
+            markers: true, 
+            start: "top 110%",
+            end: "top 110%",
+            scrub: 4,
     
-//         }
-//     })
-// })
+        }
+    })
+})
 
-// roadmap_cards_2.forEach(elem => {
+roadmap_cards_2.forEach(elem => {
     
-//     tl_roadmap.from(elem, {
-//         x: 500,
-//         delay: 0.5,
-//         duration: 2,
-//         stagger: 3,
-//         scrollTrigger: {
-//             trigger: elem,
-//             scroller: "body",
-//             markers: true, 
-//             start: "top 110%",
-//             end: "top 110%",
-//             scrub: 3,
+    tl_roadmap.from(elem, {
+        x: 500,
+        delay: 0.5,
+        duration: 2,
+        stagger: 3,
+        scrollTrigger: {
+            trigger: elem,
+            scroller: "body",
+            // markers: true, 
+            start: "top 110%",
+            end: "top 110%",
+            scrub: 3,
     
-//         }
-//     })
+        }
+    })
 
-// })
+})
 
 //team
 
